@@ -1,0 +1,4 @@
+modprobe 8192cu
+echo "0bda 8176" > /sys/bus/usb/drivers/rtl8192cu/new_id
+ifdown wlan0
+ifup wlan0
